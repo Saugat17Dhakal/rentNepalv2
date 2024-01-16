@@ -1,0 +1,728 @@
+body{
+    overflow-x: hidden;
+    background-color: var(--light);
+}
+.main-section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 20px;
+    .navigation-buttons{
+        .main-section-prev{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            color: white;
+            z-index: 500;
+            background-color: black;
+            padding: 10px;
+            cursor: pointer; 
+        }
+        .main-section-next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            color: white;
+            z-index: 500;
+            background-color: black;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+    .slide-2{
+        .main-image{
+            img{
+            transform: rotate(45deg);
+            }
+        }
+    }
+    .slider{
+        position: absolute;
+        opacity: 0;
+        transition: all 350ms ease;
+        height: 100%;
+        width: 1000px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 10px;
+        &.active{
+            opacity: 1;
+        }
+        .main-image{
+            img{
+                height: 250px;
+                width: auto;
+                background: none;
+            }
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h1{
+                    font-size: 48px;
+                    font-weight: bold;
+                    line-height: 4rem;
+                    font-family: 'DM Serif Display', sans-serif;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 1.8rem;
+                    font-weight: normal;
+                    font-family: 'Fira Code', sans-serif;
+                    opacity: 0.7;
+                }
+                .button-container{
+                    z-index: 2000;
+                    margin-top: 20px;
+                    height: 70px;
+                    cursor: pointer;
+                        transition: all 350ms ease;
+                        &:hover{
+                            transform: translateY(-3px);
+                        }
+                    .main-section-button{
+                        padding: 12.5px 50px;
+                        background-color: var(--black);
+                        color: var(--white);
+                        font-weight: bold;
+                        font-size: 14px;
+                        text-decoration: none;
+                        border-top-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        outline: none;
+                        border: none;
+                        font-family: 'Fira Code', sans-serif;
+                    }
+                }
+            }
+    }
+    
+}
+@media only screen and (max-width: 1100px) {
+    .main-section{
+        .slider{
+            max-width: 800px;
+            margin: 0 auto;
+            left: 50%;
+            transform: translateX(-50%);
+            gap: 10px;
+            .main-image{
+                img{
+                    height: 200px;
+                    width: auto;
+                    background: none;
+                }
+                }
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    h1{
+                        font-size: 36px;
+                        line-height: 3.5rem;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.6rem;
+
+                    }
+                }
+        }
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .main-section{
+        .slider{
+            margin: auto;
+            flex-direction: column;
+            max-width: 90%;
+            left: 45%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5%;
+            .main-image{
+                img{
+                    height: 200px;
+                    width: auto;
+                    background: none;
+                }
+                }
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    h1{
+                        font-size: 36px;
+                        line-height: 3.5rem;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.6rem;
+                        text-align: center;
+                    }
+                }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .main-section{
+        .slider{
+            margin: auto;
+            flex-direction: column;
+            max-width: 90%;
+            left: 50%;
+            justify-content: center;
+            align-items: center;
+            .main-image{
+                img{
+                    height: 150px;
+                    width: auto;
+                    background: none;
+                }
+                }
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    h1{
+                        font-size: 36px;
+                        line-height: 3.5rem;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.6rem;
+                        text-align: center;
+                    }
+                }
+        }
+    }
+  }
+
+  .how-rent-nepal-works{
+    margin-top: 50px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    &-heading{
+        font-family: 'DM Serif Display', sans-serif;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+    &-paragraph{
+        text-align: center;
+        font-family: 'Fira Code', sans-serif;
+        font-size: 16px;
+        opacity: 0.5;
+    }
+    &-card-containers{
+        margin: 50px auto;
+        display: flex;
+        gap: 50px;  
+        justify-content: space-evenly;
+        &-card{
+            display: flex;
+            // align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            flex-basis: 100%;
+            &-image-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    background-color: var(--white);
+                    padding: 15px;
+                    width: 30px;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+            &-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+                align-items: center;
+                gap: 20px;
+                font-family: 'Fira Code', sans-serif;
+                &-head{
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: 'DM Serif Display', sans-serif;
+                }
+                &-para{
+                    font-size: 14px;
+                    text-align: center;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+  }
+@media screen and (max-width: 800px) {
+    .how-rent-nepal-works{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .how-rent-nepal-works{
+        max-width: 80%;
+        &-card-containers{
+            flex-direction: column;
+        }
+    }
+}
+.why-choose-us{
+    font-family: 'DM Serif Display', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.why-you-should-choose-us{
+    display: flex;
+    max-width: 80%;
+    margin: 50px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    &-image-container{
+        img{
+            width: 450px;
+            height: auto;
+        }
+    }
+    &-content{
+        font-family: 'Fira Code', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        &-span{
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0.3;
+        }
+        &-head{
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 2.5rem;
+            font-family: 'DM Serif Display', sans-serif;
+        }
+        &-para{
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0.5;
+            line-height: 1.25rem;
+        }
+        &-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            &-item{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                p{
+                    font-size: 14px;
+                    font-weight: bold;
+                    opacity: 0.5;
+                    line-height: 1.25rem;
+                }
+                img{
+                    background-color: var(--white);
+                    padding: 15px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .why-you-should-choose-us{
+        max-width: 90%;
+        &-image-container{
+            img{
+                width: 350px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .why-you-should-choose-us{
+        max-width: 80%;
+        flex-direction: column;
+        &-image-container{
+            img{
+                width: 350px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.trending-products{
+    margin: 100px auto;
+    &.trending-products-next{
+        margin: 180px auto;
+    }
+    &-top{
+        &-heading{
+            font-family: 'DM Serif Display', sans-serif;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 20px 0;
+        }
+        &-paragraph{
+            text-align: center;
+            font-family: 'Fira Code', sans-serif;
+            font-size: 14px;
+            opacity: 0.5;
+        }
+        &-link{
+            justify-content: flex-end;
+            float: right;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: bold;
+            font-family: 'DM Sans', sans-serif;
+            transition: all 350ms ease;
+            &:hover{
+                transform: translateY(-3px);
+            }
+        }
+    }
+    &-card-container{
+        position: relative;
+        .navigations{
+            .prev{
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+                z-index: 1000;
+                cursor: pointer;
+                font-size: 20px;
+                border-radius: 50%;
+                box-shadow: 5px 10px 15px rgba($color: #000000, $alpha: 0.4);
+                background-color: var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+            }
+            .next{
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                z-index: 1000;
+                cursor: pointer;
+                font-size: 20px;
+                border-radius: 50%;
+                box-shadow: 5px 10px 15px rgba($color: #000000, $alpha: 0.4);
+                background-color: var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+            }
+        }
+        &-inner{
+        display: flex;
+        transition: all 350ms ease;
+        margin: 30px 0;
+        &-card{
+            min-width: 25%;
+            max-width: 25%;
+            flex-basis: 100%;
+            height: 200px;
+            transition: all 900ms ease;
+            &-content{
+                padding: 10px;
+                border-right: 0.3px solid rgba($color: #000000, $alpha: 0.2);
+                border-bottom: 0.3px solid rgba($color: #000000, $alpha: 0.2);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h1{
+                    font-family: 'Fira Code', sans-serif;
+                    font-weight: bold;
+                    font-size: 14px;
+                    padding: 20px;
+                }
+                img{
+                    height: 150px;
+                    width: auto;
+                }
+                &-rent-now{
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    padding-bottom: 15px;
+                    align-items: center;
+                    span{
+                        font-family: 'Fira Code', sans-serif;
+                        white-space: initial;
+                        font-size: 13px;
+                        opacity: 0.6;
+                        margin: 15px 0;
+                    }
+                    a{
+                        padding: 10px 25px;
+                        background-color: var(--black);
+                        color: var(--white);
+                        font-weight: bold;
+                        font-size: 13px;
+                        text-decoration: none;
+                        border-top-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        cursor: pointer;
+                        font-family: 'Fira Code', sans-serif;
+                        transition: all 350ms ease;
+                        &:hover{
+                            transform: translateY(-3px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .trending-products{
+        &-card-container{
+            &-inner{
+            &-card{
+                min-width: 50%;
+                max-width: 50%;
+                flex-basis: 100%;
+            }
+        }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .trending-products{
+        &-card-container{
+            &-inner{
+            &-card{
+                min-width: 100%;
+                max-width: 100%;
+                flex-basis: 100%;
+            }
+        }
+        }
+    }
+}
+
+.what-clients-say-about-us{
+    max-width: 90%;
+    min-width: 90%;
+    margin: 20px auto;
+    &-top{
+        margin-bottom: 50px;
+        &-heading{
+            font-family: 'DM Serif Display', sans-serif;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 20px 0;
+        }
+        &-paragraph{
+            text-align: center;
+            font-family: 'Fira Code', sans-serif;
+            font-size: 14px;
+            opacity: 0.5;
+        }
+    }
+    &-cards-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 30px;
+        &-card{
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 30px;
+            background-color: var(--white);
+            border: 0.1px solid rgba($color: #000000, $alpha: 0.1);
+            box-shadow: 5px 10px 15px rgba($color: #000000, $alpha: 0.1);
+            &-image{
+                img{
+                    height: 100px;
+                    width: auto;
+                    border-radius: 50%;
+                }
+            }
+            &-content{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h1{
+                    font-family: 'DM Serif Display', sans-serif;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: 'Fira Code', sans-serif;
+                    opacity: 0.8;
+                    font-size: 12px;
+                    white-space: initial;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    .what-clients-say-about-us{
+        &-cards-container{
+            display: grid;
+            grid-template-columns: 100%;
+            gap: 30px;
+        } 
+}
+}
+@media screen and (max-width: 500px){
+    .what-clients-say-about-us{
+        &-cards-container{
+            &-card{
+                flex-direction: column;
+            }
+        } 
+}
+}
+
+.frequently-asked-questions{
+    width: 800px;
+    max-width: 80%;
+    margin: 80px auto;
+    &-top{
+        margin-bottom: 50px;
+        &-heading{
+            font-family: 'DM Serif Display', sans-serif;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 20px 0;
+        }
+        &-paragraph{
+            text-align: center;
+            font-family: 'Fira Code', sans-serif;
+            font-size: 14px;
+            opacity: 0.5;
+        }
+    }
+    &-main-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: 'Fira Code', sans-serif;
+        &-question{
+            display: flex;
+            flex-direction: column;
+            background-color: var(--white);
+            box-shadow: 5px 10px 15px rgba($color: #000000, $alpha: 0.1);
+            gap: 20px;
+            padding: 25px;
+            div{
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                span{
+                    font-size: 24px;
+                    cursor: pointer;
+                }
+            }
+            &-head{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            &-para{
+                white-space: initial;
+                display: none;
+                &.active{
+                    display: block !important;
+                }
+            }
+        }
+    }
+    &-bottom{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        &-paragraph{
+            text-align: center;
+            font-family: 'Fira Code', sans-serif;
+            font-size: 14px;
+            opacity: 0.5;
+        }
+        &-head{
+                padding: 10px 35px;
+                background-color: var(--black);
+                color: var(--white);
+                font-weight: bold;
+                font-size: 14px;
+                text-decoration: none;
+                border-top-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                cursor: pointer;
+                font-family: 'Fira Code', sans-serif;
+            }
+            .move{
+                transition: all 350ms ease;
+                &:hover{
+                    transform: translateY(-3px);
+                }
+            } 
+    }
+}
+
+.need-helping-renting-online{
+    margin: 50px auto;
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', sans-serif;
+    text-align: center;
+    white-space: initial;
+    p{
+        padding: 50px;
+    }
+}

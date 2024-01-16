@@ -1,0 +1,99 @@
+.footer-container{
+    font-family: 'DM Sans', sans-serif;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+    &-rentnepal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        margin: 20px;
+        .footer-container-rentnepal-image{
+            width: 100px;
+            height: auto;
+        }
+        p{
+            font-size: 14px;
+            white-space: initial;
+            opacity: 0.7;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .social-media{
+            display: flex;
+            gap: 20px;
+            a{
+                text-decoration: none;
+                img{
+                    width: 30px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    &-columns{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+        &-column{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            &-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                &-item{
+                    &-link{
+                        color: var(--black);
+                        text-decoration: none;
+                        font-size: 14px;
+                        opacity: 0.8;
+                        transition: all 350ms ease;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.copyright{
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+    .footer-container{
+        flex-direction: column;
+        &-rentnepal{
+            width: 500px;
+        }
+        &-columns{
+            margin: 20px auto;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .footer-container{
+        &-columns{
+            gap: 50px;
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
+}
