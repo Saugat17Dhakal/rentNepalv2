@@ -92,6 +92,10 @@
             &-card{
                 height: 200px;
                 transition: all 900ms ease;
+                display: none;
+                &.active{
+                    display: block;
+                }
                 &-content{
                     padding: 10px;
                     border-right: 0.3px solid rgba($color: #000000, $alpha: 0.2);

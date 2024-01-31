@@ -1,0 +1,2 @@
+const email=document.querySelector("#email"),password=document.querySelector("#password"),form=document.querySelector("#firstForm"),incorrect=document.querySelector(".incorrect");form.addEventListener("submit",(e=>{"saugatdhakal19@gmail.com"===email.value&&"Password"===password.value?window.location.replace("/pages/user.html"):(incorrect.innerHTML="Incorrect email and password.",incorrect.style.color="red"),e.preventDefault()}));
+//# sourceMappingURL=login.js.map

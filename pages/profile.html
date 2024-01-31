@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions</title>
+    <title>rentNepal - Profile</title>
     <link rel="stylesheet" href="/public/css/main.css">
 </head>
 <body>
@@ -19,18 +19,18 @@
                 <img src="/public/img/logo.png" alt="" class="navbar-nav-logo-container-image">
             </div>
             <ul class="navbar-nav-list">
-                <li class="navbar-nav-list-item"><a href="/index.html" class="navbar-nav-list-item-link">HOME</a></li>
+                <li class="navbar-nav-list-item active"><a href="/pages/user.html" class="navbar-nav-list-item-link">HOME</a></li>
                 <li class="navbar-nav-list-item"><a href="/pages/browse_products.html" class="navbar-nav-list-item-link">BROWSE PRODUCTS</a></li>
                 <li class="navbar-nav-list-item"><a href="/pages/explore_shops.html" class="navbar-nav-list-item-link">EXPLORE SHOPS</a></li>
                 <li class="navbar-nav-list-item"><a href="/pages/about.html" class="navbar-nav-list-item-link">ABOUT</a></li>
-                <li class="navbar-nav-list-item active"><a href="/pages/faq.html" class="navbar-nav-list-item-link">FAQ</a></li>
+                <li class="navbar-nav-list-item"><a href="/pages/faq.html" class="navbar-nav-list-item-link">FAQ</a></li>
                 <li class="navbar-nav-list-item"><a href="/pages/contact.html" class="navbar-nav-list-item-link">CONTACT US</a></li>
             </ul>
             <div class="navbar-nav-search-button">
                 <img src="/public/img/search.png" alt="" class="navbar-nav-search-button-image">
             </div>
             <div class="navbar-nav-login-button">
-                <a href="/pages/login.html">SIGN IN</a>
+                <a href="/pages/profile.html">View Profile</a>
             </div>
         </nav>
         <!-- <div class="navbar-container-full-screen-search-bar">
@@ -38,64 +38,91 @@
             <img src="/public/img/search.png" alt="" class="navbar-container-full-screen-search-bar-image">
         </div> -->
     </section>
-    <section class="frequently-asked-questions">
-        <div class="frequently-asked-questions-top">
-            <h1 class="frequently-asked-questions-top-heading">
-                FREQUENTLY ASKED QUESTIONS
-            </h1>
-            <p class="frequently-asked-questions-top-paragraph">
-                Have questions? We’re here to help. 
-            </p>
+    <section class="profile-main-content">
+        <div class="profile-main-content-profile">
+            <h1 class="profile-main-content-profile-head">Personal Information</h1>
+            <span class="profile-main-content-profile-name">Name: Saugat Dhakal</span>
+            <span class="profile-main-content-profile-email">Email: saugatdhakal25@gmail.com</span>
+            <span class="profile-main-content-profile-age">Age: 17</span>
+            <span class="profile-main-content-profile-location">Location: Sanobharyang, Swayambhunath, Kathmandu    </span>
         </div>
-        <div class="frequently-asked-questions-main-content">
-            <div class="frequently-asked-questions-main-content-question">
-                <div class="accordion">
-                    <h1 class="frequently-asked-questions-main-content-question-head">01. WHY MUST I MAKE PAYMENT IMMEDIATELY AT CHECKOUT?</h1>
-                    <span class="accordion-opener">+</span>
+        <div class="profile-main-content-orders">
+            <h1 class="profile-main-content-orders-head">Your Orders</h1>
+            <main>
+                <div class="profile-main-content-orders-order">
+                    <div class="profile-main-content-orders-order-card active" id="cars">
+                        <div class="profile-main-content-orders-order-card-content">
+                        <h1 class="profile-main-content-orders-order-card-content-heading">
+                            Lamborghini Gellardo
+                        </h1>
+                        <img src="/public/img/slider.png" alt="">
+                        <div class="profile-main-content-orders-order-card-content-rent-now">
+                            <span class="profile-main-content-orders-order-card-rent-now-span">
+                                From Rs. 800/day
+                            </span>
+                            <a href="#" class="profile-main-content-orders-order-card-rent-now-link">
+                                CANCEL NOW
+                            </a>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <p class="frequently-asked-questions-main-content-question-para accordion-content">Sample ordering is on 'first-come-first-served' basis. To ensure that you get your desired samples, it is recommended that you make your payment within 60 minutes of checking out.</p>
-            </div>
-            <div class="frequently-asked-questions-main-content-question">
-                <div class="accordion">
-                    <h1 class="frequently-asked-questions-main-content-question-head">02. IS YOUR WEBSITE SECURE?</h1>
-                    <span class="accordion-opener">+</span>
+                <div class="profile-main-content-orders-order">
+                    <div class="profile-main-content-orders-order-card active" id="cars">
+                        <div class="profile-main-content-orders-order-card-content">
+                        <h1 class="profile-main-content-orders-order-card-content-heading">
+                            Lamborghini Titan
+                        </h1>
+                        <img src="https://turbo.redq.io/wp-content/uploads/2023/06/Group-48095922-600x383.png" alt="">
+                        <div class="profile-main-content-orders-order-card-content-rent-now">
+                            <span class="profile-main-content-orders-order-card-rent-now-span">
+                                From Rs. 800/day
+                            </span>
+                            <a href="#" class="profile-main-content-orders-order-card-rent-now-link">
+                                CANCEL NOW
+                            </a>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <p class="frequently-asked-questions-main-content-question-para accordion-content">Yep! On any page where we ask you to enter your address, phone number, or credit card information, we use secure socket layer (SSL) to encrypt the communication.</p>
-            </div>
-            <div class="frequently-asked-questions-main-content-question">
-                <div class="accordion">
-                    <h1 class="frequently-asked-questions-main-content-question-head">03. WHEN WILL MY ORDER SHIP?</h1>
-                    <span class="accordion-opener">+</span>
+                <div class="profile-main-content-orders-order">
+                    <div class="profile-main-content-orders-order-card active" id="cars">
+                        <div class="profile-main-content-orders-order-card-content">
+                        <h1 class="profile-main-content-orders-order-card-content-heading">
+                            Lamborghini Hyperion
+                        </h1>
+                        <img src="https://turbo.redq.io/wp-content/uploads/2023/06/Group-48095924-1-600x383.png" alt="">
+                        <div class="profile-main-content-orders-order-card-content-rent-now">
+                            <span class="profile-main-content-orders-order-card-rent-now-span">
+                                From Rs. 800/day
+                            </span>
+                            <a href="#" class="profile-main-content-orders-order-card-rent-now-link">
+                                CANCEL NOW
+                            </a>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <p class="frequently-asked-questions-main-content-question-para accordion-content">After your payment is verified, it takes up to 24 hours to process and ship your order. This does not include weekends or holidays. Purchases made after 11 am PST will not be shipped out until the next business day. If you order after 11 am PST on a Friday, your order will likely be shipped out on the following Monday.</p>
-            </div>
-            <div class="frequently-asked-questions-main-content-question">
-                <div class="accordion">
-                    <h1 class="frequently-asked-questions-main-content-question-head">04. HOW DO I MAKE PAYMENTS USING eSewa? HOW DOES IT WORK?</h1>
-                    <span class="accordion-opener">+</span>
+                <div class="profile-main-content-orders-order">
+                    <div class="profile-main-content-orders-order-card active" id="cars">
+                        <div class="profile-main-content-orders-order-card-content">
+                        <h1 class="profile-main-content-orders-order-card-content-heading">
+                            Lamborghini Aventador
+                        </h1>
+                        <img src="https://turbo.redq.io/wp-content/uploads/2023/06/Group-48095929-600x382.png" alt="">
+                        <div class="profile-main-content-orders-order-card-content-rent-now">
+                            <span class="profile-main-content-orders-order-card-rent-now-span">
+                                From Rs. 800/day
+                            </span>
+                            <a href="#" class="profile-main-content-orders-order-card-rent-now-link">
+                                CANCEL NOW
+                            </a>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <p class="frequently-asked-questions-main-content-question-para accordion-content">eSewa is the easiest way to make payments online. While checking out your order, you will be redirected to the eSewa website. Be sure to fill in correct details for fast & hassle-free payment processing. After a successful eSewa payment, a payment advice will be automatically generated to cartsy.redq.io system for your order.
-                </p>
-            </div>
-            <div class="frequently-asked-questions-main-content-question">
-                <div class="accordion">
-                    <h1 class="frequently-asked-questions-main-content-question-head">05. HOW MUCH DO DELIVERIES COST?</h1>
-                    <span class="accordion-opener">+</span>
-                </div>
-                <p class="frequently-asked-questions-main-content-question-para accordion-content">There is a 5$ delivery fee if the order value is 50$ or more. If the order value is less than 50$, we charge BDT 10$ delivery fee.</p>
-            </div>
-        </div>
-        <div class="frequently-asked-questions-bottom">
-            <div>
-                <p class="frequently-asked-questions-bottom-paragraph">
-                    Didn’t get the answer? Drop your message
-                </p>
-            </div>
-            <div class="move">
-            <a href="/pages/contact.html" class="frequently-asked-questions-bottom-head">
-                Contact Us
-            </a>
-            </div>
+            </main>
+            
         </div>
     </section>
     <section class="footer-container">
@@ -151,6 +178,6 @@
         Copyright © <span class="date"></span> rentNepal. All Rights Reserved.
     </section>
     <script src="/public/js/components/navbar.js"></script>
-    <script src="/public/js/components/accordion.js"></script>
+    <script src="/public/js/components/profile.js"></script>
 </body>
 </html>

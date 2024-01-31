@@ -1,0 +1,1 @@
+{"version":3,"file":"components/profile.js","names":["cancel","document","querySelectorAll","forEach","cancels","onclick","parentElement","style","opacity","console","log"],"sources":["components/profile.js"],"mappings":"AAAA,MAAMA,OAASC,SAASC,iBAAiB,yDACzCF,OAAOG,SAAQC,IACXA,EAAQC,QAAU,KACdD,EAAQE,cAAcA,cAAcC,MAAMC,QAAU,IACpDC,QAAQC,IAAIN,EAAQE,cAAcA,cAAa,CACnD"}

@@ -1,2 +1,2 @@
-const searchInput=document.querySelector(".main-content-sidebar-search-input"),searchItems=document.querySelectorAll(".browse-products-card-container-inner-card-content-heading");searchInput.addEventListener("input",(e=>{searchItems.forEach((e=>{e.textContent.includes(searchInput.value.toUpperCase)?e.parentElement.style.display="flex":e.parentElement.style.display="none"}))}));
+const tabOpeners=document.querySelectorAll("[data-product-target]");tabOpeners.forEach((e=>{e.onclick=()=>{document.querySelectorAll(".browse-products-card-container-inner-card").forEach((e=>{e.classList.remove("active")})),document.querySelectorAll(e.dataset.productTarget).forEach((e=>{e.classList.add("active")})),console.log(e)}}));
 //# sourceMappingURL=search.js.map
